@@ -7,8 +7,9 @@ const { signToken } = require('../utils/auth');
 
 // 
 const resolvers = {
+    // query to obtain user
     Query: {
-        // 'me' = user
+        // 'me' = user that is logged in to app
         me: async (parent, args, context) => {
             if (context.user) {
                 // ripped from TA :)
@@ -19,15 +20,32 @@ const resolvers = {
         },
     },
 
+    // mutation to add a user
     Mutation: {
         addUser: async (parent, args) => {
+            // new user + signup form
             const user = await User.create(args);
             const token = signToken(user);
-
+            // once token assigned with user:
             return { token, user };
         },
+
+        //  login form
+        login: async (parent, { email, password }) => {
+
+            // user check
+            const user = await User.findOne({ email });
+
+            // alert if user email not a match
+            if (!user) {
+                throw new AuthenticationError('Information provided does not match our records. Please try again!');
+            }
+
+            // password check
+            const correctPw = await user.isCorrectPassword(password);
+
+        }
     }
-}
 
 
 
