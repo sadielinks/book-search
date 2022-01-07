@@ -38,11 +38,16 @@ const resolvers = {
 
             // alert if user email not a match
             if (!user) {
-                throw new AuthenticationError('Information provided does not match our records. Please try again!');
+                throw new AuthenticationError('The information provided does not match our records. Please try again!');
             }
 
             // password check
             const correctPw = await user.isCorrectPassword(password);
+
+            // 
+            if (!correctPw) {
+                throw new AuthenticationError('The information provided does not match our records. Please try again!');
+            }
 
         }
     }
