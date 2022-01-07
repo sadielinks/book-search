@@ -50,6 +50,17 @@ const resolvers = {
             }
         },
 
+        // saveBook accepts input with specific params
+        saveBook: async (parent, args, context) => {
+            if (context.user) {
+                );
+
+                return updatedUser;
+            }
+
+            throw new AuthenticationError('Please log in to save!');
+        },
+
 
 
 
