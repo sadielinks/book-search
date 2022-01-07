@@ -9,10 +9,22 @@
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://https://github.com/sadielinks/book-search-engine"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Sadie Sial",
+  "license": "MIT",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.6.1",
+    "debug": "^4.3.3",
+    "express": "^4.17.2",
+    "graphql": "^16.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.5"
   }
 }
