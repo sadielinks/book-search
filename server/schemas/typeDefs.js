@@ -19,7 +19,11 @@ type Book {
     savedBooks: [Book]
   }
 
-  
+  type Auth {
+    token: ID!
+    user: User
+  }
+
 
 
 `;
