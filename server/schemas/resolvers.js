@@ -61,11 +61,25 @@ const resolvers = {
 
                 return updatedUser;
             }
-
+            // if user is not matched then auth error:
             throw new AuthenticationError('Please log in to save!');
         },
 
+        // removeBook with previous params
+        removeBook: async (parent, args, context) => {
+            if (context.user) {
+                const updatedUser = await User.findOneAndUpdate(
+                    { _id: context.user._id },
+                    // return value with 'pull'
+                    { $pull: { savedBooks: { bookId: args.bookId } } },
+                    { new: true }
+                );
 
+                return updatedUser;
+            }
+            // if user does not match then auth error:
+            throw new AuthenticationError('Please log in to save!');
+        }
 
 
     },
