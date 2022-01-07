@@ -1,3 +1,4 @@
+// require the apollo package
 const { gql } = require('apollo-server-express');
 
 // define typedefs (based on assignment README)
