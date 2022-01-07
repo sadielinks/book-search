@@ -44,16 +44,16 @@ const resolvers = {
             // password check
             const correctPw = await user.isCorrectPassword(password);
 
-            // 
+            // alert if password not a match
             if (!correctPw) {
                 throw new AuthenticationError('The information provided does not match our records. Please try again!');
             }
-
-        }
-    }
+        },
 
 
 
+
+    },
 
 
 
