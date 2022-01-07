@@ -24,6 +24,15 @@ type Book {
     user: User
   }
 
+  input BookInput {
+    authors: [String]
+    description: String
+    bookId: String!
+    image: String
+    link: String
+    title: String!
+  }
+
   type Query {
     me: User
   }
@@ -34,9 +43,6 @@ type Book {
     saveBook(input: SavedBookInput!): User
     removeBook(bookId: String!): User
   }
-
-
-
 `;
 
 module.exports = typeDefs
