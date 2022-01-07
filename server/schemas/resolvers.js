@@ -16,10 +16,18 @@ const resolvers = {
                 return userData;
             }
             throw new AuthenticationError('Please log into the application :)');
-        }
+        },
+    },
+
+    Mutation: {
+        addUser: async (parent, args) => {
+            const user = await User.create(args);
+            const token = signToken(user);
+
+            return { token, user };
+        },
     }
-
-
+}
 
 
 
