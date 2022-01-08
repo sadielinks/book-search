@@ -1,4 +1,4 @@
-import { gql } from "apollo-server-express";
+import { gql } from "@apollo/client";
 
 // GET_ME will execute the "me" query set up with apollo server
 export const GET_ME = gql`
