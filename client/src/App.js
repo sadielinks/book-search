@@ -7,12 +7,25 @@ import Navbar from './components/Navbar';
 // import apollo server deets
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 
-// import setContext - include token in http headers
+// import setContext - included in authLink
 import { setContext } from '@apollo/client'
 
 const httpLink = createHttpLink({
   // url/endpoint for all GraphQL requests
   uri: '/graphql',
+});
+
+// setContext obtains token and attaches to http headers
+const authLink = setContext((_, { headers }) => {
+  // use getItem method from local storage
+  const token = localStorage.getItem('id_token');
+  return {
+    headers: {
+      ...headers,
+      // with token now obtained
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  };
 });
 
 
