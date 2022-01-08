@@ -4,8 +4,11 @@ import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 
-// need to import apollo
+// import apollo server deets
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
+
+// import setContext - include token in http headers
+import { setContext } from '@apollo/client'
 
 function App() {
   return (
