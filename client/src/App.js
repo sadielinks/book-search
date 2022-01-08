@@ -28,7 +28,12 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
-
+// bring together the httpLink + authLink objects for API requests
+const client = new ApolloClient({
+  // combo
+  link: authLink.concat(httpLink),
+  cache: new InMemoryCache(),
+});
 
 function App() {
   return (
