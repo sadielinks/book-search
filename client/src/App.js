@@ -10,6 +10,13 @@ import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@ap
 // import setContext - include token in http headers
 import { setContext } from '@apollo/client'
 
+const httpLink = createHttpLink({
+  // url/endpoint for all GraphQL requests
+  uri: '/graphql',
+});
+
+
+
 function App() {
   return (
     <Router>
