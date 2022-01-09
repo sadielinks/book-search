@@ -10,7 +10,7 @@ import { useQuery, useMutation } from '@apollo/client';
 // import from queries.js instead
 import { GET_ME } from '../utils/queries';
 // import for mutations.js use
-import { REMOVE_BOOK } from '../../utils/mutations';
+import { REMOVE_BOOK } from '../utils/mutations';
 
 const SavedBooks = () => {
   // removed state from *here*
