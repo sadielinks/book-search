@@ -108,9 +108,7 @@ Logged In Search Result
 
 - [Deployed App on Heroku](https://book-search-engine-sns.herokuapp.com/)
 
-- [Google Drive](https://drive.google.com/drive/folders/1Q73SY0TiaKR0SS1sHMcOjcV2U-SoDEEh?usp=sharing)
-
-- [GitHub Repository](https://github.com/sadielinks/employee-tracker-sql)
+- [GitHub Repository](https://github.com/sadielinks/book-search-engine/)
 
 <br>
 
