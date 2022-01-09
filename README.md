@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Book Search Engine (Bootcamp Assignment 21 - MERN)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+By: Sadie Sial
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+![mit](https://img.shields.io/badge/license-MIT-lightblue)
 
-### `npm start`
+#### Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Description](#description)
+- [Technologies](#technologies)
+- [Screenshots](#screenshots)
+- [Links](#links)
+- [Contact](#contact)
+- [License](#license)
+  <br><br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Description <br>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### User Story:
 
-### `npm run build`
+```
+AS AN avid reader
+I WANT to search for new books to read
+SO THAT I can keep a list of books to purchase
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies
 
-### `npm run eject`
+The technologies used to create this program were:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- HTML + CSS
+- Javascript
+- NodeJS
+- ExpressJS
+- MongoDB
+- Mongo Atlas
+- Apollo
+- GraphQL
+- Heroku
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Screenshots
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
 
-## Learn More
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Screenshot](assets/images/screenshot.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
 
-### Code Splitting
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Screenshot](assets/images/screenshot2.png)
 
-### Analyzing the Bundle Size
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Links
 
-### Making a Progressive Web App
+- [Deployed App on Heroku](https://book-search-engine-sns.herokuapp.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [Google Drive](https://drive.google.com/drive/folders/1Q73SY0TiaKR0SS1sHMcOjcV2U-SoDEEh?usp=sharing)
 
-### Advanced Configuration
+- [GitHub Repository](https://github.com/sadielinks/employee-tracker-sql)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<br>
 
-### Deployment
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [GitHub Profile](https://github.com/sadielinks)
+- [Portfolio](https://sadielinks.github.io/professional-portfolio/)
+- [Email](mailto:sadiecodes@gmail.com)
 
-### `npm run build` fails to minify
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This source code is available to everyone under the standard [MIT license ©](https://choosealicense.com/licenses/mit/) <br><br>
+© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
