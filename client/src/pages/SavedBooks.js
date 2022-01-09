@@ -45,8 +45,8 @@ const SavedBooks = () => {
     }
   };
 
-  // if data isn't here yet, say so
-  if (!userDataLength) {
+  // removed previous userDataLength with loading
+  if (loading) {
     return <h2>LOADING...</h2>;
   }
 
