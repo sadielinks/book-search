@@ -17,6 +17,7 @@ By: Sadie Sial
   <br><br>
 
 ## Description <br>
+
 This web-based application allows for users to search for books and create lists based on their finds! The Book Search Engine has an Apollo Server that uses GraphQL to handle the users data throughout the apps lifecycle.
 
 ### User Story:
@@ -56,7 +57,7 @@ THEN I am presented with all of the books I have saved to my account, each featu
 WHEN I click on the Remove button on a book
 THEN that book is deleted from my saved books list
 WHEN I click on the Logout button
-THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button 
+THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
 ```
 
 ## Technologies
@@ -78,16 +79,28 @@ The technologies used to create this program were:
 ## Screenshots
 
 ```
-
+Logged Out Home
 ```
 
-![Screenshot](assets/images/screenshot.png)
+![Screenshot](assets/images/home-out.png)
 
 ```
-
+Logged In Home
 ```
 
-![Screenshot](assets/images/screenshot2.png)
+![Screenshot](assets/images/home-in.png)
+
+```
+Logged Out Search Result
+```
+
+![Screenshot](assets/images/loggedout.png)
+
+```
+Logged In Search Result
+```
+
+![Screenshot](assets/images/loggedin.png)
 
 <br>
 
