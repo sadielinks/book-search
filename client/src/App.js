@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 
 // import setContext - included in authLink
-import { setContext } from '@apolloclient/link/context'
+import { setContext } from '@apollo/client/link/context'
 
 const httpLink = createHttpLink({
   // url/endpoint for all GraphQL requests
